@@ -15,8 +15,14 @@
 #        predict clinical outcomes.                                                              #
 ##################################################################################################
 
-source("MLVPCA.r")
 load("data1.RData")
+
+source("MLVPCA.r")
+source("fun_GetCovarianceEst.r")
+source("fun_SelectTuningPar.r")
+source("fun_SeqADMM.r")
+source("fun_other.r")
+
 install.packages("Matrix")
 install.packages("pracma")
 install.packages("magic")
